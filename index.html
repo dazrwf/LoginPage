@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <title>MyProject Mr.FF</title>
+</head>
+
+<body>
+    <!-- make website -->
+    <div class="wrapper flex flex-col flex-nowrap items-center gap-5">
+        <!-- make form -->
+        <form id="login" class="login w-[25%] h-fit  mt-[50px] rounded-[4px] border-[1px] border-solid border-[#a3a0a0]
+        p-3 box-border flex flex-col flex-nowrap items-center gap-[26px] shadow-md">
+            <!-- make header -->
+            <h3 id="userName" class="text-[40px] text-left w-[80%] font-bold text-[#000000] ">Log In</h3>
+            <!-- make input username -->
+            <input id="userNsame" name="userName" type="text" placeholder="UserName"
+                class="w-[80%] h-[30px] border-[1px] border-solid border-[#a3a0a0] focus:outline-none p-[20px] box-border rounded-[4px] font-sans text-[20px] shadow-md">
+            <!-- make input password -->
+            <input id="password" name="password" type="password" placeholder="Password"
+                class="w-[80%] h-[30px] border-[1px] border-solid border-[#a3a0a0] focus:outline-none p-[20px] box-border rounded-[4px] font-sans text-[20px] shadow-md">
+            <!-- make dont forget btn -->
+            <div class="keep flex flex-row flex-wrap gap-[5px] w-[80%]">
+                <input type="checkbox" name="forget" id="forget">
+                <label for="forget">keep me sign in</label>
+            </div>
+            <!-- make btn submit -->
+            <input type="submit" id="btn-submit" class="btn-submit w-[80%] h-fit p-[14px] box-border bg-[#234f75] rounded-[8px] 
+         text-[24px] hover:bg-[#5193cd] text-[#fff]" value="Log In">
+        </form>
+        <!-- make header for comments -->
+        <h1 class="text-[40px] font-bold font-sans">Comments</h1>
+        <!-- make place for comments -->
+        <div id="allComents" class="w-[100%] flex flex-row flex-wrap gap-2 justify-center"></div>
+    </div>
+
+    <script src="./javascript/jqcdn.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+
+</html>
